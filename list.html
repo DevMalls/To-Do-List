@@ -1,0 +1,39 @@
+<html>
+    <head>
+         <title>CodePen - To-Do List, Plain JS</title>
+
+         <!--Responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Custom Style-->
+        <link rel="stylesheet" href="../ToDoList/style.css">
+        
+        <!-- Google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+
+        <!--Sweet Alert-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+  </script>
+    </head>
+    <body>
+        <div class="fullbody">
+                <h1>work to-dos</h1>
+            <p id="firstline"> Enter text into the input field to add items to your list.</p>
+            <p id="secondline">Click the item to mark it as complete.</p>
+            <p id="thirdline">Click the "X" to remove the item from your list.</p>
+            <div class="getinput">
+            <input type="text" placeholder="New item..." maxlength="27" autocomplete="off" id="item" name="item_val">
+            <button class="addIcon" onclick="addItem()">
+                <svg aria-hidden="true" class="svgAdjustment" focusable="false" data-prefix="fas" data-icon="pencil" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-pencil fa-w-16 fa-3x"><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z" class=""></path></svg>
+            </button>
+        </div>
+        <div class="listcontent">
+            <ul id="todolist">
+
+            </ul>
+        </div>
+        </div>
+    </body>
+    <script src="../ToDoList/script.js">
+       </script>  
+</html>

@@ -1,0 +1,211 @@
+:root {
+    --button-border: #d3a92b;
+    --light-blue: #04A1BF;
+    --light-green: #51DF70;
+    --black: black;
+    --h1-ul-li-font: white;
+    --h1-X-weight: 800;
+    --line1-pencil-color:#FFCD5D;
+    --line3-remove-color:#025F70;
+    --li-button-radius: 6px;
+    --font-size: 16px;
+    --transition:all 0.75s ease;
+}
+.fullbody{
+    padding-bottom: 30px;
+    background-color: var(--light-blue);
+}
+body{
+    background-color: var(--light-blue);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin:0px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h1{
+    color:var(--h1-ul-li-font);
+    text-transform: uppercase;
+    font-weight: var(--h1-X-weight);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-top:30px;
+}
+p{
+    font-weight:600;
+}
+#firstline{
+    margin-top: 20px;
+    color: var(--line1-pencil-color);
+}
+#secondline{
+    color:var(--light-green);
+}
+#thirdline{
+    color: var(--line3-remove-color);
+}
+.getinput{
+    margin-top: 12px;
+    padding: 0px 15px 0px 15px;
+}
+#item{
+    font-family: inherit;
+    border-radius: var(--li-button-radius);
+    min-width: 54%;
+    padding:5px;
+    border: none;
+    margin-top:12px;
+    height: 34px;
+    font-size: var(--font-size);
+}
+::placeholder{
+    font-family: inherit;
+    font-size: var(--font-size);
+}
+.addIcon{
+    background-color: var(--line3-remove-color);
+    color: var(--light-blue);
+    border:none;
+    padding:5px 15px;
+    border-radius: var(--li-button-radius);
+    height:34px;
+    width:46px;
+}
+.addIcon:active{
+   border: 2px solid var(--black); 
+   outline:2px solid var(--h1-ul-li-font);
+}
+.addIcon:focus{
+    border: 2px solid var(--black); 
+    outline:2px solid var(--h1-ul-li-font);
+ }
+.addIcon:hover{
+    background-color: #02798F;
+    transition: var(--transition);
+}
+
+.addIcon:hover svg{
+    transition:var(--transition);
+    color: var(--line1-pencil-color);
+}
+.svgAdjustment{
+    color: var(--light-blue);
+    height: 14px;
+    width: 14px;
+}
+#todolist{
+    list-style: none;
+    text-align: left;
+    color: var(--h1-ul-li-font);
+    margin:20px 0px 0px 20px;
+}
+li{
+    padding: 10px 20px;
+    background-color: #4EB9CD;
+    margin:0px 330px 10px 270px;
+    border:2px solid #025f70;
+    border-radius: var(--li-button-radius);
+    color: var(--h1-ul-li-font);
+}
+li:hover{
+    background-color: #76CFE0;
+    transition: var(--transition);
+}
+li:hover{
+    background-color: #76CFE0;
+    transition: var(--transition);
+}
+#removeItem{
+    font-family: inherit;
+    background: none;
+    color:var(--line3-remove-color);
+    font-weight:var(--h1-X-weight);
+    border: none;
+    float:right;
+    font-size:var(--font-size);
+    margin-top:1px;
+}
+#removeItem:active{
+    margin-top:2px;
+    border: 2px solid var(--black); 
+    outline:2px solid var(--h1-ul-li-font);
+    border-radius: var(--li-button-radius);
+ }
+ #removeItem:focus{
+    margin-top:0px;
+     border: 2px solid var(--black); 
+     outline:2px solid var(--h1-ul-li-font);
+     border-radius: var(--li-button-radius);
+  }
+.listClick{
+    color:#00891E;
+    background-color: var(--light-green) !important;
+}
+@media screen and (min-width: 240px) {
+    h1{
+        margin: 30px 15px 0px 15px;
+    }
+    li{
+        margin:0px 30px 10px -30px;
+    }
+    #item{
+        min-width: 64%;
+       }
+    .addIcon:focus,:active{
+        border-color: var(--button-border);
+    }
+    #removeItem:focus,:active{
+      border-color: var(--button-border);
+  }
+  .fullbody{
+      padding-bottom: 36px;
+  }
+}
+@media screen and (min-width: 320px) {
+    #item{
+        min-width: 62%;
+       }
+}
+@media screen and (min-width: 600px ){
+    #item{
+        min-width: 60%;
+       }
+    li{
+        margin:0px 140px 10px 80px;
+    }
+}
+@media screen and (min-width: 768px ) {
+    li{
+        margin:0px 170px 10px 110px;
+    }
+}
+@media screen and (min-width: 992px ) {
+    #item{
+        min-width: 62%;
+       }
+    li{
+        margin:0px 200px 10px 140px;
+    }
+}
+@media screen and (min-width: 1024px ) {
+    #item{
+        min-width: 60%;
+       }
+    li{
+        margin:0px 220px 10px 160px;
+    }
+}
+@media screen and (min-width: 1200px ) {
+    #item{
+        min-width: 54%;
+       }
+    li{
+        margin:0px 330px 10px 270px;
+    }
+    .addIcon:focus,:active{
+        border-color: var(--black);
+    }
+    #removeItem:focus,:active{
+      border-color: var(--black);
+}
+}
